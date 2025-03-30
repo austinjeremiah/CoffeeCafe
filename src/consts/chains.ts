@@ -1,3 +1,6 @@
+import { ProtocolType } from '@hyperlane-xyz/utils';
+
+
 import {
   eclipsemainnet,
   eclipsemainnetAddresses,
@@ -25,29 +28,21 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
     ...eclipsemainnet,
     mailbox: eclipsemainnetAddresses.mailbox,
   },
-  // mycustomchain: {
-  //   protocol: ProtocolType.Ethereum,
-  //   chainId: 123123,
-  //   domainId: 123123,
-  //   name: 'mycustomchain',
-  //   displayName: 'My Chain',
-  //   nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-  //   rpcUrls: [{ http: 'https://mycustomchain-rpc.com' }],
-  //   blockExplorers: [
-  //     {
-  //       name: 'MyCustomScan',
-  //       url: 'https://mycustomchain-scan.com',
-  //       apiUrl: 'https://api.mycustomchain-scan.com/api',
-  //       family: ExplorerFamily.Etherscan,
-  //     },
-  //   ],
-  //   blocks: {
-  //     confirmations: 1,
-  //     reorgPeriod: 1,
-  //     estimateBlockTime: 10,
-  //   },
-  //   logoURI: '/logo.svg',
-  // },
+  coffeechain: {
+    protocol: ProtocolType.Ethereum,
+    chainId: 2910,
+    domainId: 2910,
+    name: 'coffeechain',
+    displayName: 'Coffee Chain',
+    nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    rpcUrls: [{ http: 'http://13.54.168.253:8547' }],
+    blocks: {
+      confirmations: 1,
+      reorgPeriod: 1,
+      estimateBlockTime: 10,
+    },
+    logoURI: '/logos/coffeechain.png', // You'll need to add this logo
+  },
   ethereum: {
     ...ethereum,
     rpcUrls: process.env.NEXT_PUBLIC_ETHEREUM_RPC_URL
