@@ -1,4 +1,5 @@
 import { WarpCoreConfig } from '@hyperlane-xyz/sdk';
+import { TokenStandard } from '@hyperlane-xyz/sdk';
 
 export const warpRouteConfigs: WarpCoreConfig = {
   tokens: [
@@ -11,7 +12,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       ],
       decimals: 18,
       name: "Ether",
-      standard: "EvmHypNative",
+      standard: TokenStandard.EvmNative,  
       symbol: "ETH"
     },
     {
@@ -23,7 +24,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       ],
       decimals: 18,
       name: "Ether",
-      standard: "EvmHypNative",
+      standard: TokenStandard.EvmNative,  
       symbol: "ETH"
     },
     {
@@ -35,7 +36,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       ],
       decimals: 18,
       name: "Ether",
-      standard: "EvmHypNative",
+      standard: TokenStandard.EvmNative,  
       symbol: "ETH"
     }
   ],
