@@ -1,4 +1,3 @@
-
 ---
 tokens:
   - addressOrDenom: "0xbAE7e8B4EF06a55988533836dBA2491e702Ea134"
@@ -6,26 +5,48 @@ tokens:
     connections:
       - token: ethereum|basesepolia|0x69CBf83E1009BC7A3B9150DDD271906fd0036dEf
       - token: ethereum|coffeechain|0x8E335f25d0e3574358D543DF2671e7364E9b9728
+      - token: ethereum|luksotestnet|0xdB630944101765cfb1f6836AE7579Eee1cdBbCBC
+      - token: ethereum|arbitrumsepolia|0xbAE7e8B4EF06a55988533836dBA2491e702Ea134
     decimals: 18
     name: Ether
     standard: EvmHypNative
     symbol: ETH
+
   - addressOrDenom: "0x69CBf83E1009BC7A3B9150DDD271906fd0036dEf"
     chainName: basesepolia
     connections:
       - token: ethereum|arbitrumsepolia|0xbAE7e8B4EF06a55988533836dBA2491e702Ea134
       - token: ethereum|coffeechain|0x8E335f25d0e3574358D543DF2671e7364E9b9728
-    decimals: 18
-    name: Ether
-    standard: EvmHypNative
-    symbol: ETH
-  - addressOrDenom: "0x8E335f25d0e3574358D543DF2671e7364E9b9728"
-    chainName: coffeechain
-    connections:
-      - token: ethereum|arbitrumsepolia|0xbAE7e8B4EF06a55988533836dBA2491e702Ea134
+      - token: ethereum|luksotestnet|0xdB630944101765cfb1f6836AE7579Eee1cdBbCBC
       - token: ethereum|basesepolia|0x69CBf83E1009BC7A3B9150DDD271906fd0036dEf
     decimals: 18
     name: Ether
     standard: EvmHypNative
     symbol: ETH
+
+  - addressOrDenom: "0xdB630944101765cfb1f6836AE7579Eee1cdBbCBC"
+    chainName: luksotestnet
+    connections:
+      - token: ethereum|arbitrumsepolia|0xbAE7e8B4EF06a55988533836dBA2491e702Ea134
+      - token: ethereum|basesepolia|0x69CBf83E1009BC7A3B9150DDD271906fd0036dEf
+      - token: ethereum|coffeechain|0x8E335f25d0e3574358D543DF2671e7364E9b9728
+      - token: ethereum|luksotestnet|0xdB630944101765cfb1f6836AE7579Eee1cdBbCBC
+    decimals: 18
+    name: LYXt
+    standard: EvmNative
+    symbol: LYXt
+
+  - addressOrDenom: "0x8E335f25d0e3574358D543DF2671e7364E9b9728"
+    chainName: coffeechain
+    connections:
+      - token: ethereum|arbitrumsepolia|0xbAE7e8B4EF06a55988533836dBA2491e702Ea134
+      - token: ethereum|basesepolia|0x69CBf83E1009BC7A3B9150DDD271906fd0036dEf
+      - token: ethereum|luksotestnet|0xdB630944101765cfb1f6836AE7579Eee1cdBbCBC
+      - token: ethereum|coffeechain|0x8E335f25d0e3574358D543DF2671e7364E9b9728
+    decimals: 18
+    name: Ether
+    standard: EvmHypNative
+    symbol: ETH
+
 options: {}
+  
