@@ -11,11 +11,10 @@ export function TipCard() {
   if (!show) return null;
   return (
     <Card className="w-100 p-2 sm:w-[31rem]">
-      <h2 className="text-primary-500">Bridge Tokens with Hyperlane Warp Routes!</h2>
+      <h2 className="text-primary-500">Bridge any Tokens with the grid cross pay mini app</h2>
       <div className="flex items-end justify-between">
         <p className="mt-1 max-w-[75%] text-xs">
-          Warp Routes make it easy to permissionlessly take your tokens interchain. Fork this
-          template to get started!
+        Seamlessly bridge tokens across chains with secure, permissionless transfers.
         </p>
         <a
           href={links.github}
@@ -24,7 +23,7 @@ export function TipCard() {
           className="ml-2 flex items-center rounded-lg bg-gray-100 px-3 py-1.5 text-xs text-primary-500 transition-all hover:bg-gray-200 active:bg-gray-300 sm:text-sm"
         >
           <Image src={InfoCircle} width={12} alt="" />
-          <span className="ml-1.5 hidden text-sm sm:inline">More</span>
+          <span className="ml-1.5 hidden text-sm sm:inline"></span>
         </a>
       </div>
       <div className="absolute right-3 top-3">
